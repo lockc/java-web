@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</head>
+<body>
+    <p th:text="'Hello, ' + ${userlogin.username} + '!'" />
+    <br/>
+    
+    <input type="button" value="Hide It" onclick="hideElement('it')" />
+    <input type="button" value="Show It" onclick="showElement('it')" />  
+    
+    <br/>
+    <br/>
+    
+    <p id="it" th:text="'Hello, ' + ${userlogin.username} + '!'" />
+    
+    <br/>
+    
+    
+    <form action="#" th:action="@{/greetings/stuff}" method="POST">
+        <input type="submit" value="Get Stuff"/>
+    </form>
+    
+    
+    <!-- th:if="${not #lists.isEmpty(${stuff})}" -->
+    <table>
+    
+        <tbody>
+            <tr th:each="thing : ${stuff}">
+                <td>${thing}</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    
+</body>
+</html>

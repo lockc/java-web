@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CCMIS :: Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    
+    <form action="#" th:action="@{/login}" th:object="${userlogin}" method="POST">
+    
+        <label for="username">Username:</label> 
+        <input id="username" type="text" th:field="*{username}" /> <br/>
+        
+        <label for="passowrd">Password:</label> 
+        <input id="password" type="password" th:field="*{password}" />  <br/>
+        
+        <input type="submit" value="Login"/>
+  
+  
+    </form>
+    
+</body>
+</html>

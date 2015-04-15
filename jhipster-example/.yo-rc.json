@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "hippo",
+    "packageName": "lockc.hippo",
+    "packageFolder": "lockc/hippo",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "edbfaea10eef42ca17baaf1db9f075ac76410266"
+  }
+}
